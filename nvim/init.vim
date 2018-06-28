@@ -1,3 +1,6 @@
+"Colors
+syntax enable
+" set background=dark " Dark background
 "Keymapping
 let mapleader="\<Space>"
 noremap <l> <ö>
@@ -15,6 +18,8 @@ set showmatch           " Show matching brackets.
 set number              " Show the line numbers on the left side.
 set formatoptions+=o    " Continue comment marker in new lines.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
+set autoindent
+set copyindent
 
 " More natural splits
     set splitbelow          " Horizontal split below current.
@@ -40,19 +45,20 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 match ExtraWhitespace /\s\+$\|\t/
 
-set ignorecase          " Make searching case insensitive
-set smartcase           " ... unless the query has capital letters.
-set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
+" Search
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
-
-"set rnu " Relative numbering
 
 "nnoremap ; :    " Use ; for commands.
 "nnoremap Q @q   " Use Q to execute default register.
@@ -60,3 +66,5 @@ nmap <Leader>s :%s//g<Left><Left>
 "Toggle between Normal and relative numbering when entering insert mode
 autocmd InsertEnter * :set rnu
 autocmd InsertLeave * :set nornu
+"Clipboard
+set clipboard+=unnamedplus
