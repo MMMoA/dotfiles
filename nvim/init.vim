@@ -1,15 +1,16 @@
+"Load Plugins
+source $HOME/.config/nvim/files/plugins.vimrc
+" Load Keybindings
+source $HOME/.config/nvim/files/keybindings.vimrc
 "Colors
-syntax enable
-" set background=dark " Dark background
-"Keymapping
-let mapleader="\<Space>"
-noremap <l> <ö>
-noremap <k> <l>
-noremap <j> <k>
-noremap <h> <j>
-
-" better escape with leader
-inoremap jj <esc>
+syntax on
+let g:onedark_termial_italics=1
+colorscheme onedark
+" Lightline config for colorscheme
+set noshowmode
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
 
 set shiftwidth=4
 set softtabstop=4
@@ -45,23 +46,13 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 match ExtraWhitespace /\s\+$\|\t/
 
-
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
-
 " Search
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
-" Search and Replace
-nmap <Leader>s :%s//g<Left><Left>
 
-"nnoremap ; :    " Use ; for commands.
-"nnoremap Q @q   " Use Q to execute default register.
 
 "Toggle between Normal and relative numbering when entering insert mode
 autocmd InsertEnter * :set rnu
