@@ -19,16 +19,27 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 "Function Folding
 Plug 'tmhedberg/SimpylFold'
 
+"""""""""""""""""""""
 """ Python - specific
+"""""""""""""""""""""
 "Indentation
-Plug 'vim-scripts/indentpython.vim'
+""Plug 'vim-scripts/indentpython.vim'
 "Syntax checking and highlighting
-Plug 'vim-syntastic/syntastic'
-Plug 'nvie/vim-flake8'
+""Plug 'vim-syntastic/syntastic'
+""Plug 'nvie/vim-flake8'
 "Python virtualenv
-Plug 'plytophogy/vim-virtualenv'
+""Plug 'plytophogy/vim-virtualenv'
 
-"" Vimtex Latex support
-Plug 'lervag/vimtex'
+" Vimtex Latex support
+""Plug 'lervag/vimtex'
  "Finish up and load
+
+""""""""""""""""""""
+""" HASKELL SPECIFIC
+""""""""""""""""""""
+" Haskell Liniting
+Plug 'w0rp/ale'
+" Syntax highlighting and indetentation
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
 call plug#end()
