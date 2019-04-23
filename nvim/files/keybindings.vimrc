@@ -32,3 +32,4 @@ nmap <Leader>f <esc>:FZF<CR>
 
 " Terminal shortcuts
 nnoremap <Leader>r <esc>:vsplit<CR><c-l>:terminal<CR>
+tnoremap <Leader><ESC> <C-\><C-N><c-h>

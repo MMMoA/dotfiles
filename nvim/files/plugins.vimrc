@@ -12,12 +12,18 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " You Complete Me Autocompletion
-Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --system-libclang'}
+"Plug 'Valloric/YouCompleteMe',{'do':'./install.py --clang-completer --system-libclang'}
 "YCM File Generator
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+
+" Asyncronouns linting with A.L.E
+Plug 'w0rp/ale'
 
 "Function Folding
 Plug 'tmhedberg/SimpylFold'
+
+" Bracket and parenthese pairing
+Plug 'jiangmiao/auto-pairs'
 
 """""""""""""""""""""
 """ Python - specific
@@ -38,7 +44,7 @@ Plug 'tmhedberg/SimpylFold'
 """ HASKELL SPECIFIC
 """"""""""""""""""""
 " Haskell Liniting
-Plug 'w0rp/ale'
+Plug 'bitc/vim-hdevtools'
 " Syntax highlighting and indetentation
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
