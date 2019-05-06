@@ -1,5 +1,20 @@
 "Set keybindings
 
+" Disable arrow keys and backspace in insert mode
+" Disable Arrow keys in normal mode
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+
+" Disable Arrow keys in Insert mode
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap <BS> <nop>
+
+"Leader
 let mapleader="\<Space>"
 
 " better escape with leader

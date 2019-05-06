@@ -3,8 +3,9 @@ call plug#begin('~/.config/nvim/nvim-plug')
 
 "Colortheme
 Plug 'joshdick/onedark.vim'
+Plug 'flazz/vim-colorschemes'
 "Improved syntax highlighting
-"Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 " Lightline
 Plug 'itchyny/lightline.vim'
 " Fuzzy find
@@ -29,12 +30,12 @@ Plug 'jiangmiao/auto-pairs'
 """ Python - specific
 """""""""""""""""""""
 "Indentation
-""Plug 'vim-scripts/indentpython.vim'
+Plug 'vim-scripts/indentpython.vim'
 "Syntax checking and highlighting
-""Plug 'vim-syntastic/syntastic'
-""Plug 'nvie/vim-flake8'
+Plug 'vim-syntastic/syntastic'
+Plug 'nvie/vim-flake8'
 "Python virtualenv
-""Plug 'plytophogy/vim-virtualenv'
+Plug 'plytophogy/vim-virtualenv'
 
 " Vimtex Latex support
 ""Plug 'lervag/vimtex'
