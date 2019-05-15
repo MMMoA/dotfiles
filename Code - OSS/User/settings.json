@@ -1,0 +1,74 @@
+{
+	"editor.fontFamily": "FuraCode Nerd Font",
+	"editor.fontLigatures": true,
+	"editor.formatOnPaste" : true,
+	"editor.tabSize" :4,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false,
+    "editor.suggestSelection": "first",
+	"editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"git.autofetch": true,
+	"python.jediEnabled": false,
+	"vsintellicode.java.completionsEnabled": false,
+
+    // Workbench config
+	"workbench.colorTheme": "One Dark Pro Vivid",
+	"workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+
+    // Vim plugin settings
+	"vim.enableNeovim": true,
+	"vim.neovimPath": "/usr/bin/nvim",
+	"vim.history": 100,"vim.easymotion": true,
+	"vim.highlightedyank.enable": true,
+	"vim.hlsearch": true,
+	"vim.leader": "Space",
+	"vim.sneak": true,
+	"vim.statusBarColorControl": true,
+	"vim.statusBarColors.insert": "#008fff",
+	"vim.statusBarColors.replace": "#bfbc06",
+	"vim.textwidth": 120,
+	"vim.normalModeKeyBindings": [
+		{ // Newline below
+			"before" : ["<leader>", "j"],
+            "after" : ["o", "<Esc>", "k"]
+		},
+		{ // Newline above
+			"before" : ["<leader>", "k"],
+            "after" : ["O", "<Esc>", "j"]
+		},
+		{ // Clear search
+			"before" : ["<leader>", "p"],
+			"commands" : [":nohl"]
+        },
+
+        // Split config
+        { 
+            "before" : ["<leader>", "d"],
+            "commands" : [":close"]
+        },
+        {
+            "before" : ["<leader>", "v"],
+            "commands" : [":vsplit"]
+        },
+        {
+            "before" : ["<leader>", "b"],
+            "commands" : [":split"]
+        }
+			
+	],
+
+	"vim.insertModeKeyBindings": [
+		{
+			"before" : ["j", "j"],
+			"after" : ["<Esc>"]
+		}
+    ],
+    "editor.wrappingIndent": "indent"
+}
